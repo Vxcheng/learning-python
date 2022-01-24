@@ -50,3 +50,9 @@ s = set(l); print(s)
 for i in sorted(s):print(i, end=", ")
 print()
 for i in reversed(l):print(i, end=", ")
+
+
+# test
+dicts = {'using': False}
+if dicts['using']: print('true')
+else: print('false')

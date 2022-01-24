@@ -26,3 +26,23 @@ is is not	身份运算符
 in not in	成员运算符
 not and or	逻辑运算符
 '''
+import re
+
+a = 12
+values = re.findall(r"\d{1,}?\.\d{2}", str(a))
+if values is not None:
+    print(values[0])
+
+
+def bytes_to_human(n):
+    symbols = ('K','M','G','T','P','E','Z','Y')
+    prefix = {}
+    for i,s in enumerate(symbols):
+        prefix[s] = 1 << (i + 1) * 10
+    for s in reversed(symbols):
+        if n >= prefix[s]:
+            value = float(n) / prefix[s]
+            return '%.1f%s' % (value,s)
+    return '%sB' % n
+value = bytes_to_human(2*1024*1024)
+print(value)
