@@ -1,6 +1,9 @@
+# -*- coding: utf-8 -*-
 from docxtpl import DocxTemplate, RichText
+import sys
 
-
+reload(sys)
+sys.setdefaultencoding('utf8')
 tpl = DocxTemplate("tests/my_word_template.docx")
 context = { 'company_name' : "World company" }
 context['col_labels'] = ['fruit', 'vegetable', 'stone', 'thing']
@@ -13,7 +16,7 @@ context['items'] = [
 context['total_price'] = '100,000,000.00'
 context['category'] = 'Book'
 
-context['foobar'] = RichText('Foobar!', color='ff0000')
+context['foobar'] = RichText('RED', color='ff0000')
 context["details"] = [
           {
             "group_name":"SRP",
@@ -75,12 +78,19 @@ context["details2"] = [
 for list in context['details2']:
     for item in list:
         if item["node_name"] == "rac037":
-            item["node_name"] = RichText(item["node_name"], color='00C800', size=10, )
+            item["node_name"] = RichText(item["node_name"], color='ff0000', )
         else:
-            item["node_name"] = RichText(item["node_name"], color='F62633', size=10, )
+            item["node_name"] = RichText(item["node_name"], color='ff0000',)
                
-
+# Microsoft Yahei, Microsoft YaHei
 context['status'] = "online"
+context["critical"] = RichText('critical', color='F5222D',font='Microsoft YaHei',size=60, )
+context["warning"] = RichText('warning', color='FAAD14',font='Microsoft YaHei', size=18)
+context["prompt"] = RichText('prompt', color='13C2C2',font='Microsoft YaHei', size=20)
+context["normal"] = RichText('normal', color='0A0D14',font='Microsoft YaHei', size=20)
+context["colors"] = [
+  "critical","warning", "prompt","normal"
+]
 
 tpl.render(context, autoescape=True)
 tpl.save("tests/01.docx")
