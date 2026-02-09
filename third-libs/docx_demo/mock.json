@@ -1,0 +1,2019 @@
+{
+    "code": 0,
+    "msg": "成功",
+    "data": {
+        "job_id": 14,
+        "domain_id": 1,
+        "domain_name": "default",
+        "report_time": "2022-04-25 14:54:45",
+        "score": "",
+        "report_title": "zData一体机安装和巡检报告",
+        "report_overview": {
+            "question_overview": {
+                "result": "",
+                "details": [
+                    {
+                        "desc": "有3个参数不符合最佳实践或存在问题",
+                        "item_ch": "ASM参数",
+                        "item_en": "asm_parameter_report",
+                        "problem_level": "critical",
+                        "problem_level_ch": "严重",
+                        "object_name": "+ASM1(172.16.60.55)",
+                        "object_type": "实例",
+                        "object_type_en": "asm_instance"
+                    },
+                    {
+                        "desc": "1台服务器CPU处于降频模式",
+                        "item_ch": "CPU主频检查",
+                        "item_en": "cpucheck",
+                        "problem_level": "critical",
+                        "problem_level_ch": "严重",
+                        "object_name": "cell60(172.16.60.60)",
+                        "object_type": "服务器",
+                        "object_type_en": "server"
+                    },
+                    {
+                        "desc": "检查发现2台服务器grub参数检查异常",
+                        "item_ch": "grub参数检查",
+                        "item_en": "grub_params_check",
+                        "problem_level": "critical",
+                        "problem_level_ch": "严重",
+                        "object_name": "cell60(172.16.60.60)\nrac055(172.16.60.55)",
+                        "object_type": "服务器",
+                        "object_type_en": "server"
+                    },
+                    {
+                        "desc": "检查发现1个节点RAID卡掉电保护模块状态检查异常",
+                        "item_ch": "RAID卡检查",
+                        "item_en": "raidcheck",
+                        "problem_level": "critical",
+                        "problem_level_ch": "严重",
+                        "object_name": "rac055(172.16.60.55)",
+                        "object_type": "服务器",
+                        "object_type_en": "server"
+                    },
+                    {
+                        "desc": "检查发现1个IB端口速率异常",
+                        "item_ch": "IB网卡检查",
+                        "item_en": "ibcheck",
+                        "problem_level": "critical",
+                        "problem_level_ch": "严重",
+                        "object_name": "rac055(172.16.60.55)",
+                        "object_type": "服务器",
+                        "object_type_en": "server"
+                    },
+                    {
+                        "desc": "检查发现2个IB网卡端口MTU检查异常",
+                        "item_ch": "IPOIB网卡检查",
+                        "item_en": "ipoibcheck",
+                        "problem_level": "critical",
+                        "problem_level_ch": "严重",
+                        "object_name": "rac055(172.16.60.55)",
+                        "object_type": "服务器",
+                        "object_type_en": "server"
+                    },
+                    {
+                        "desc": "检查发现2台服务器电源检查异常",
+                        "item_ch": "电源检查",
+                        "item_en": "powercheck",
+                        "problem_level": "critical",
+                        "problem_level_ch": "严重",
+                        "object_name": "rac055(172.16.60.55)\ncell60(172.16.60.60)",
+                        "object_type": "服务器",
+                        "object_type_en": "server"
+                    },
+                    {
+                        "desc": "检查发现有1个内核参数不符合最佳实践",
+                        "item_ch": "数据库服务器内核参数",
+                        "item_en": "kernel_parameter_report",
+                        "problem_level": "critical",
+                        "problem_level_ch": "严重",
+                        "object_name": "rac055(172.16.60.55)",
+                        "object_type": "计算节点",
+                        "object_type_en": "compute_node"
+                    },
+                    {
+                        "desc": "检查发现有2个内存参数不符合最佳实践",
+                        "item_ch": "数据库服务器内存参数",
+                        "item_en": "meminfo_parameter_report",
+                        "problem_level": "critical",
+                        "problem_level_ch": "严重",
+                        "object_name": "rac055(172.16.60.55)",
+                        "object_type": "计算节点",
+                        "object_type_en": "compute_node"
+                    },
+                    {
+                        "desc": "6个ASM磁盘失效组与存储节点名称一致检查异常",
+                        "item_ch": "ASM磁盘检查",
+                        "item_en": "asmdiskcheck",
+                        "problem_level": "critical",
+                        "problem_level_ch": "严重",
+                        "object_name": "testdb-cluster(rac055)",
+                        "object_type": "集群",
+                        "object_type_en": "cluster"
+                    },
+                    {
+                        "desc": "ASM磁盘组检查发现1项异常",
+                        "item_ch": "ASM磁盘组检查",
+                        "item_en": "asm_diskgroup_check",
+                        "problem_level": "critical",
+                        "problem_level_ch": "严重",
+                        "object_name": "testdb-cluster(rac055)",
+                        "object_type": "集群",
+                        "object_type_en": "cluster"
+                    }
+                ]
+            },
+            "db_overview": {
+                "db_view": {
+                    "desc": "没有在zData Manager中配置数据库。",
+                    "details": []
+                },
+                "cluster_view": {
+                    "problem_level": "normal",
+                    "desc": "",
+                    "details": [
+                        {
+                            "clusterId": "e1e52033a0cdef41bfcd99628734da2d",
+                            "clusterName": "testdb-cluster",
+                            "clusterNodesCnt": "2",
+                            "clusterVersion": "19.0.0.0.0",
+                            "time_diff_config": 30,
+                            "timezone_diff": false,
+                            "datetime_diff": 0,
+                            "details": [
+                                {
+                                    "ipAddr": "172.16.60.55",
+                                    "objectName": "rac055",
+                                    "clusterReadyServices": "online",
+                                    "oracleHighAvailabilityServices": "online",
+                                    "clusterSynchronizationServices": "online",
+                                    "eventManager": "online",
+                                    "timezone": "CST",
+                                    "time_text": "2022-04-25 14:53:27"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "asmgroup_view": {
+                    "desc": "",
+                    "details": [
+                        {
+                            "desc": "",
+                            "cluster_name": "testdb-cluster",
+                            "object_name": "rac055",
+                            "ip_addr": "172.16.60.55",
+                            "asmgroup_items": [
+                                {
+                                    "group_number": "2",
+                                    "diskgroup_name": "DG_DATA01",
+                                    "state": "MOUNTED",
+                                    "type": "NORMAL",
+                                    "total_mb": "307200",
+                                    "free_mb": "295352",
+                                    "usable_file_mb": "96476",
+                                    "offline_disks": "0"
+                                },
+                                {
+                                    "group_number": "3",
+                                    "diskgroup_name": "DG_GRID01",
+                                    "state": "MOUNTED",
+                                    "type": "NORMAL",
+                                    "total_mb": "307200",
+                                    "free_mb": "306228",
+                                    "usable_file_mb": "101914",
+                                    "offline_disks": "0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "server_overview": {
+                "desc": "检查的zData一体机中有2台服务器。",
+                "server_list": [
+                    {
+                        "ip": "172.16.60.60",
+                        "is_etcd": false,
+                        "is_monitor": false,
+                        "manufacturer": "New H3C Technologies Co., Ltd.",
+                        "obj_id": 3,
+                        "obj_name": "cell60",
+                        "obj_alias": "cell60",
+                        "obj_type": 4,
+                        "agent_info": "installed",
+                        "online": "online",
+                        "task_id": 0,
+                        "abnormal": false,
+                        "os": "Oracle Linux 7.9",
+                        "os_version": "3.10.0-1160.el7.x86_64",
+                        "productname": "UniServer R4900 G3",
+                        "serialnumber": "210235A2CR620AF000DN",
+                        "site_name": "",
+                        "architecture": "x86_64",
+                        "cpu_num": 2,
+                        "cpu_model": "Intel(R) Xeon(R) Silver 4214R CPU @ 2.40GHz",
+                        "mem_info": "62G",
+                        "kernel_num": 4,
+                        "uptime": "1d3h32m10s"
+                    }
+                ],
+                "server_details": [
+                    {
+                        "ip": "172.16.60.55",
+                        "obj_name": "rac055",
+                        "previews": {
+                            "desc": "",
+                            "details": []
+                        },
+                        "cpus": {
+                            "desc": "未发现CPU信息",
+                            "details": []
+                        },
+                        "memorys": {
+                            "desc": "未发现内存信息",
+                            "details": []
+                        },
+                        "raids": {
+                            "desc": "未发现RAID卡设备",
+                            "details": []
+                        },
+                        "virtual_disks": {
+                            "desc": "未发现虚拟磁盘信息",
+                            "details": []
+                        },
+                        "sata_sases": {
+                            "desc": "",
+                            "details": [
+                                {
+                                    "adapter_id": 0,
+                                    "celldisk_name": "",
+                                    "dev_path": "",
+                                    "device_firmware_level": "DE09",
+                                    "device_name": "",
+                                    "domain_id": 1,
+                                    "enclosure_id": 32,
+                                    "free": "299999170658",
+                                    "interface_type": "SAS",
+                                    "media_type": "HDD",
+                                    "ManufacturerId": "TOSHIBA",
+                                    "ModelNumber": "AL13SEB300",
+                                    "meta_updated_timestamp": 1650869644,
+                                    "object_id": 1,
+                                    "object_ip_addr": "172.16.60.55",
+                                    "object_name": "rac055",
+                                    "raid_level": "",
+                                    "raid_type": "megaraid",
+                                    "record_info": "rac055,172.16.60.55,0,14H0A00OFRD6",
+                                    "remain": "",
+                                    "serial_number": "14H0A00OFRD6",
+                                    "size": "299999170658",
+                                    "slot_number": "0",
+                                    "status": "正常",
+                                    "storagepool_name": "",
+                                    "temperature": "",
+                                    "using": false,
+                                    "vg_name": "",
+                                    "wwn": "5000039548193879",
+                                    "method": "slot",
+                                    "IP": "172.16.60.55"
+                                },
+                                {
+                                    "adapter_id": 0,
+                                    "celldisk_name": "",
+                                    "dev_path": "",
+                                    "device_firmware_level": "LS08",
+                                    "device_name": "",
+                                    "domain_id": 1,
+                                    "enclosure_id": 32,
+                                    "free": "600126116593",
+                                    "interface_type": "SAS",
+                                    "media_type": "HDD",
+                                    "ManufacturerId": "SEAGATE",
+                                    "ModelNumber": "ST600MM0006",
+                                    "meta_updated_timestamp": 1650869644,
+                                    "object_id": 1,
+                                    "object_ip_addr": "172.16.60.55",
+                                    "object_name": "rac055",
+                                    "raid_level": "",
+                                    "raid_type": "megaraid",
+                                    "record_info": "rac055,172.16.60.55,1,S0M2GCPS",
+                                    "remain": "",
+                                    "serial_number": "S0M2GCPS",
+                                    "size": "600126116593",
+                                    "slot_number": "1",
+                                    "status": "正常",
+                                    "storagepool_name": "",
+                                    "temperature": "",
+                                    "using": false,
+                                    "vg_name": "",
+                                    "wwn": "5000C500726E8608",
+                                    "method": "slot",
+                                    "IP": "172.16.60.55"
+                                },
+                                {
+                                    "adapter_id": 0,
+                                    "celldisk_name": "",
+                                    "dev_path": "",
+                                    "device_firmware_level": "N003",
+                                    "device_name": "",
+                                    "domain_id": 1,
+                                    "enclosure_id": 32,
+                                    "free": "1000203393957",
+                                    "interface_type": "SAS",
+                                    "media_type": "HDD",
+                                    "ManufacturerId": "SEAGATE",
+                                    "ModelNumber": "ST1000NM0045",
+                                    "meta_updated_timestamp": 1650869644,
+                                    "object_id": 1,
+                                    "object_ip_addr": "172.16.60.55",
+                                    "object_name": "rac055",
+                                    "raid_level": "",
+                                    "raid_type": "megaraid",
+                                    "record_info": "rac055,172.16.60.55,3,ZBS1ESJA0000C8500TL1",
+                                    "remain": "",
+                                    "serial_number": "ZBS1ESJA0000C8500TL1",
+                                    "size": "1000203393957",
+                                    "slot_number": "3",
+                                    "status": "正常",
+                                    "storagepool_name": "",
+                                    "temperature": "",
+                                    "using": false,
+                                    "vg_name": "",
+                                    "wwn": "5000C500A678B644",
+                                    "method": "slot",
+                                    "IP": "172.16.60.55"
+                                },
+                                {
+                                    "adapter_id": 0,
+                                    "celldisk_name": "CDISK_RAC055_001",
+                                    "dev_path": "/dev/sdk",
+                                    "device_firmware_level": "ST51",
+                                    "device_name": "/dev/sdk",
+                                    "domain_id": 1,
+                                    "enclosure_id": 32,
+                                    "free": "1746034229248",
+                                    "interface_type": "SAS",
+                                    "media_type": "HDD",
+                                    "ManufacturerId": "SEAGATE",
+                                    "ModelNumber": "DL1800MM0159",
+                                    "meta_updated_timestamp": 1650869644,
+                                    "object_id": 1,
+                                    "object_ip_addr": "172.16.60.55",
+                                    "object_name": "rac055",
+                                    "raid_level": "0",
+                                    "raid_type": "megaraid",
+                                    "record_info": "rac055,172.16.60.55,4,WBN0LH8K",
+                                    "remain": "",
+                                    "serial_number": "WBN0LH8K",
+                                    "size": "1798801023041",
+                                    "slot_number": "4",
+                                    "status": "正常",
+                                    "storagepool_name": "HDD",
+                                    "temperature": "36",
+                                    "using": true,
+                                    "vg_name": "CDISK_RAC055_001_VG",
+                                    "wwn": "5000C500B8C288A4",
+                                    "method": "slot",
+                                    "IP": "172.16.60.55"
+                                },
+                                {
+                                    "adapter_id": 0,
+                                    "celldisk_name": "",
+                                    "dev_path": "/dev/sdg",
+                                    "device_firmware_level": "DR07",
+                                    "device_name": "/dev/sdg",
+                                    "domain_id": 1,
+                                    "enclosure_id": 32,
+                                    "free": "6001134464401",
+                                    "interface_type": "SAS",
+                                    "media_type": "HDD",
+                                    "ManufacturerId": "TOSHIBA",
+                                    "ModelNumber": "MG04SCA60EE",
+                                    "meta_updated_timestamp": 1650869644,
+                                    "object_id": 1,
+                                    "object_ip_addr": "172.16.60.55",
+                                    "object_name": "rac055",
+                                    "raid_level": "0",
+                                    "raid_type": "megaraid",
+                                    "record_info": "rac055,172.16.60.55,5,57N0A118FEGC",
+                                    "remain": "",
+                                    "serial_number": "57N0A118FEGC",
+                                    "size": "6001134464401",
+                                    "slot_number": "5",
+                                    "status": "正常",
+                                    "storagepool_name": "",
+                                    "temperature": "34",
+                                    "using": true,
+                                    "vg_name": "",
+                                    "wwn": "50000397C8437874",
+                                    "method": "slot",
+                                    "IP": "172.16.60.55"
+                                },
+                                {
+                                    "adapter_id": 0,
+                                    "celldisk_name": "",
+                                    "dev_path": "",
+                                    "device_firmware_level": "AV01",
+                                    "device_name": "",
+                                    "domain_id": 1,
+                                    "enclosure_id": 32,
+                                    "free": "8001146115325",
+                                    "interface_type": "SATA",
+                                    "media_type": "HDD",
+                                    "ManufacturerId": "ATA",
+                                    "ModelNumber": "ST8000VX0022-2EJ112",
+                                    "meta_updated_timestamp": 1650869644,
+                                    "object_id": 1,
+                                    "object_ip_addr": "172.16.60.55",
+                                    "object_name": "rac055",
+                                    "raid_level": "",
+                                    "raid_type": "megaraid",
+                                    "record_info": "rac055,172.16.60.55,6,ZA1DL5JF",
+                                    "remain": "",
+                                    "serial_number": "ZA1DL5JF",
+                                    "size": "8001146115325",
+                                    "slot_number": "6",
+                                    "status": "正常",
+                                    "storagepool_name": "",
+                                    "temperature": "",
+                                    "using": false,
+                                    "vg_name": "",
+                                    "wwn": "5000c500b331a21f",
+                                    "method": "slot",
+                                    "IP": "172.16.60.55"
+                                }
+                            ]
+                        },
+                        "pcie_nvmes": {
+                            "desc": "",
+                            "details": [
+                                {
+                                    "adapter_id": 0,
+                                    "celldisk_name": "",
+                                    "dev_path": "/dev/nvme0n1",
+                                    "device_firmware_level": "KNGND110",
+                                    "device_name": "/dev/nvme0n1",
+                                    "domain_id": 1,
+                                    "enclosure_id": 0,
+                                    "free": "3200631791616",
+                                    "interface_type": "PCIe",
+                                    "media_type": "FLASH",
+                                    "ManufacturerId": "Unknown device",
+                                    "ModelNumber": "HUSMR7632BHP301",
+                                    "meta_updated_timestamp": 1650869634,
+                                    "object_id": 1,
+                                    "object_ip_addr": "172.16.60.55",
+                                    "object_name": "rac055",
+                                    "raid_level": "",
+                                    "raid_type": "",
+                                    "record_info": "rac055,172.16.60.55,0000:42:00.0,SDM00003D742",
+                                    "remain": "100",
+                                    "serial_number": "SDM00003D742",
+                                    "size": "3200631791616",
+                                    "slot_number": "0000:42:00.0",
+                                    "status": "正常",
+                                    "storagepool_name": "",
+                                    "temperature": "43",
+                                    "using": false,
+                                    "vg_name": "",
+                                    "wwn": "",
+                                    "method": "pcie_unique",
+                                    "IP": "172.16.60.55"
+                                }
+                            ]
+                        },
+                        "storage_network_card": {
+                            "ib_list": {
+                                "desc": "",
+                                "details": [
+                                    {
+                                        "host_ip": "172.16.60.55",
+                                        "host_name": "rac055",
+                                        "ca_name": "mlx4_0",
+                                        "port": 1,
+                                        "net_interface": "ib0",
+                                        "ip_addrs": "3.2.2.55",
+                                        "base_lid": "0x0",
+                                        "rate": "10",
+                                        "max_rate": "",
+                                        "binding_srp": false,
+                                        "binding_nvme": false,
+                                        "binding_roce": false,
+                                        "active_state": "Down",
+                                        "link_state": "Polling",
+                                        "port_guid": "fe80:0000:0000:0000:f452:1403:007d:c871",
+                                        "firmware": "2.35.5100",
+                                        "ca_type": "MT4099",
+                                        "sm_lid": "0x0",
+                                        "link_layer": "InfiniBand",
+                                        "binding_protocol_display": "SRP、NVME/IB"
+                                    }
+                                ]
+                            },
+                            "ipoib_list": {
+                                "desc": "",
+                                "details": [
+                                    {
+                                        "host_ip": "172.16.60.55",
+                                        "host_name": "rac055",
+                                        "name": "mlx4_0",
+                                        "state": "Down",
+                                        "port": 1,
+                                        "dev_name": "ib0",
+                                        "ip": "3.2.2.55",
+                                        "mask": "255.255.255.0",
+                                        "mtu": "2044",
+                                        "driver_version": "4.9-3.1.5"
+                                    }
+                                ]
+                            }
+                        },
+                        "powers": {
+                            "desc": "未发现电源信息",
+                            "details": []
+                        },
+                        "fans": {
+                            "desc": "未发现风扇信息",
+                            "details": []
+                        },
+                        "partitions": {
+                            "desc": "未发现分区信息",
+                            "details": []
+                        }
+                    },
+                    {
+                        "ip": "172.16.60.60",
+                        "obj_name": "cell60",
+                        "previews": {
+                            "desc": "",
+                            "details": [
+                                {
+                                    "name": "内核",
+                                    "model": "3.10.0-1160.el7.x86_64",
+                                    "count": "2"
+                                },
+                                {
+                                    "name": "型号",
+                                    "model": "PowerEdge R740xd",
+                                    "count": "N/A"
+                                }
+                            ]
+                        },
+                        "cpus": {
+                            "desc": "未发现CPU信息",
+                            "details": []
+                        },
+                        "memorys": {
+                            "desc": "未发现内存信息",
+                            "details": []
+                        },
+                        "raids": {
+                            "desc": "未发现RAID卡设备",
+                            "details": [
+                                {
+                                    "raid_card_cache_size": "0MB",
+                                    "raid_card_name": "PERC H310 Mini",
+                                    "fw_pkg_build": "20.12.1-0002",
+                                    "sn": "44A07E8",
+                                    "host_name": "rac055",
+                                    "bbu_model": "",
+                                    "pcie_slot": "00:86:00:00",
+                                    "controller_status": "Optimal",
+                                    "ctl_id": "1"
+                                }
+                            ]
+                        },
+                        "virtual_disks": {
+                            "desc": "",
+                            "details": [
+                                {
+                                    "vd_id": 1,
+                                    "raid_bus_id": 0,
+                                    "adapter_id": 0,
+                                    "enclosure_id": 252,
+                                    "pd_id": [
+                                        2
+                                    ],
+                                    "size": "1.745 TB",
+                                    "dev_path": "/dev/sdb",
+                                    "name": "CELL60_252_2",
+                                    "raid_level": "0",
+                                    "media_type": "SSD",
+                                    "block_size": "512B",
+                                    "read": "Read Ahead Always",
+                                    "write": "WriteThrough",
+                                    "cache": "Direct IO",
+                                    "bad_block": false,
+                                    "status": "normal",
+                                    "slot": "0:2"
+                                },
+                                {
+                                    "vd_id": 0,
+                                    "raid_bus_id": 0,
+                                    "adapter_id": 0,
+                                    "enclosure_id": 252,
+                                    "pd_id": [
+                                        1
+                                    ],
+                                    "size": "1.090 TB",
+                                    "dev_path": "/dev/sda",
+                                    "name": "",
+                                    "raid_level": "1",
+                                    "media_type": "HDD",
+                                    "block_size": "512B",
+                                    "read": "Read Ahead Always",
+                                    "write": "WriteBack",
+                                    "cache": "Direct IO",
+                                    "bad_block": false,
+                                    "status": "normal",
+                                    "slot": "0:1"
+                                }
+                            ]
+                        },
+                        "sata_sases": {
+                            "desc": "",
+                            "details": [
+                                {
+                                    "adapter_id": 0,
+                                    "celldisk_name": "",
+                                    "dev_path": "/dev/sda",
+                                    "device_firmware_level": "C004",
+                                    "device_name": "/dev/sda",
+                                    "domain_id": 1,
+                                    "enclosure_id": 252,
+                                    "free": "1198467674275",
+                                    "interface_type": "SAS",
+                                    "media_type": "HDD",
+                                    "ManufacturerId": "SEAGATE",
+                                    "ModelNumber": "ST1200MM0129",
+                                    "meta_updated_timestamp": 1650869548,
+                                    "object_id": 3,
+                                    "object_ip_addr": "172.16.60.60",
+                                    "object_name": "cell60",
+                                    "raid_level": "1",
+                                    "raid_type": "megaraid",
+                                    "record_info": "cell60,172.16.60.60,0,WFK8K2NV0000K1027XZT",
+                                    "remain": "",
+                                    "serial_number": "WFK8K2NV0000K1027XZT",
+                                    "size": "1198467674275",
+                                    "slot_number": "0",
+                                    "status": "正常",
+                                    "storagepool_name": "",
+                                    "temperature": "35",
+                                    "using": true,
+                                    "vg_name": "",
+                                    "wwn": "5000C500D2E06D80",
+                                    "method": "slot",
+                                    "IP": "172.16.60.60"
+                                },
+                                {
+                                    "adapter_id": 0,
+                                    "celldisk_name": "",
+                                    "dev_path": "/dev/sda",
+                                    "device_firmware_level": "C004",
+                                    "device_name": "/dev/sda",
+                                    "domain_id": 1,
+                                    "enclosure_id": 252,
+                                    "free": "1198467674275",
+                                    "interface_type": "SAS",
+                                    "media_type": "HDD",
+                                    "ManufacturerId": "SEAGATE",
+                                    "ModelNumber": "ST1200MM0129",
+                                    "meta_updated_timestamp": 1650869548,
+                                    "object_id": 3,
+                                    "object_ip_addr": "172.16.60.60",
+                                    "object_name": "cell60",
+                                    "raid_level": "1",
+                                    "raid_type": "megaraid",
+                                    "record_info": "cell60,172.16.60.60,1,WFK8K2DQ0000K1027Y3F",
+                                    "remain": "",
+                                    "serial_number": "WFK8K2DQ0000K1027Y3F",
+                                    "size": "1198467674275",
+                                    "slot_number": "1",
+                                    "status": "正常",
+                                    "storagepool_name": "",
+                                    "temperature": "35",
+                                    "using": true,
+                                    "vg_name": "",
+                                    "wwn": "5000C500D2E07BA4",
+                                    "method": "slot",
+                                    "IP": "172.16.60.60"
+                                },
+                                {
+                                    "adapter_id": 0,
+                                    "celldisk_name": "",
+                                    "dev_path": "/dev/sdb",
+                                    "device_firmware_level": "D3MU001",
+                                    "device_name": "/dev/sdb",
+                                    "domain_id": 1,
+                                    "enclosure_id": 252,
+                                    "free": "1919747302096",
+                                    "interface_type": "SATA",
+                                    "media_type": "SSD",
+                                    "ManufacturerId": "ATA",
+                                    "ModelNumber": "Micron_5300_MTFDDAK1T9TDS",
+                                    "meta_updated_timestamp": 1650869548,
+                                    "object_id": 3,
+                                    "object_ip_addr": "172.16.60.60",
+                                    "object_name": "cell60",
+                                    "raid_level": "0",
+                                    "raid_type": "megaraid",
+                                    "record_info": "cell60,172.16.60.60,2,2018280E3CF0",
+                                    "remain": "100",
+                                    "serial_number": "2018280E3CF0",
+                                    "size": "1919747302096",
+                                    "slot_number": "2",
+                                    "status": "正常",
+                                    "storagepool_name": "",
+                                    "temperature": "29",
+                                    "using": true,
+                                    "vg_name": "",
+                                    "wwn": "500A0751280E3CF0",
+                                    "method": "slot",
+                                    "IP": "172.16.60.60"
+                                }
+                            ]
+                        },
+                        "pcie_nvmes": {
+                            "desc": "未发现PCIe/NVMe磁盘信息",
+                            "details": []
+                        },
+                        "storage_network_card": {
+                            "ib_list": {
+                                "desc": "",
+                                "details": [
+                                    {
+                                        "host_ip": "172.16.60.55",
+                                        "host_name": "rac055",
+                                        "ca_name": "mlx4_0",
+                                        "port": 1,
+                                        "net_interface": "ib0",
+                                        "ip_addrs": "3.2.2.55",
+                                        "base_lid": "0x0",
+                                        "rate": "10",
+                                        "max_rate": "",
+                                        "binding_srp": false,
+                                        "binding_nvme": false,
+                                        "binding_roce": false,
+                                        "active_state": "Down",
+                                        "link_state": "Polling",
+                                        "port_guid": "fe80:0000:0000:0000:f452:1403:007d:c871",
+                                        "firmware": "2.35.5100",
+                                        "ca_type": "MT4099",
+                                        "sm_lid": "0x0",
+                                        "link_layer": "InfiniBand",
+                                        "binding_protocol_display": "SRP、NVME/IB"
+                                    }
+                                ]
+                            },
+                            "ipoib_list": {
+                                "desc": "",
+                                "details": [
+                                    {
+                                        "host_ip": "172.16.60.55",
+                                        "host_name": "rac055",
+                                        "name": "mlx4_0",
+                                        "state": "Down",
+                                        "port": 1,
+                                        "dev_name": "ib0",
+                                        "ip": "3.2.2.55",
+                                        "mask": "255.255.255.0",
+                                        "mtu": "2044",
+                                        "driver_version": "4.9-3.1.5"
+                                    }
+                                ]
+                            }
+                        },
+                        "powers": {
+                            "desc": "",
+                            "details": [
+                                {
+                                    "name": "10.1",
+                                    "voltage": "234 Volts",
+                                    "electricity": "0.60 Amps",
+                                    "cur_capy": "140 Watts",
+                                    "max_capy": "",
+                                    "part_num": "",
+                                    "status": "in use",
+                                    "host_name": "",
+                                    "host_ip": "172.16.60.55"
+                                },
+                                {
+                                    "name": "10.2",
+                                    "voltage": "",
+                                    "electricity": "",
+                                    "cur_capy": "",
+                                    "max_capy": "",
+                                    "part_num": "",
+                                    "status": "not use",
+                                    "host_name": "",
+                                    "host_ip": "172.16.60.55"
+                                }
+                            ]
+                        },
+                        "fans": {
+                            "desc": "",
+                            "details": [
+                                {
+                                    "name": "Fan1",
+                                    "speed": "3840 RPM",
+                                    "status": "notok",
+                                    "host_ip": "172.16.60.55"
+                                },
+                                {
+                                    "name": "Fan4",
+                                    "speed": "3960 RPM",
+                                    "status": "ok",
+                                    "host_ip": "172.16.60.55"
+                                },
+                                {
+                                    "name": "Fan6",
+                                    "speed": "3960 RPM",
+                                    "status": "ok",
+                                    "host_ip": "172.16.60.55"
+                                },
+                                {
+                                    "name": "Fan5",
+                                    "speed": "3960 RPM",
+                                    "status": "notok",
+                                    "host_ip": "172.16.60.55"
+                                },
+                                {
+                                    "name": "Fan3",
+                                    "speed": "3840 RPM",
+                                    "status": "ok",
+                                    "host_ip": "172.16.60.55"
+                                },
+                                {
+                                    "name": "Fan2",
+                                    "speed": "3960 RPM",
+                                    "status": "ok",
+                                    "host_ip": "172.16.60.55"
+                                }
+                            ]
+                        },
+                        "partitions": {
+                            "desc": "未发现分区信息",
+                            "details": []
+                        }
+                    }
+                ],
+                "storage_disk": {
+                    "desc": "",
+                    "disks": [
+                        {
+                            "object_ip_addr": "172.16.60.55",
+                            "object_name": "rac055",
+                            "dev_path": "",
+                            "ManufacturerId": "TOSHIBA",
+                            "using": false,
+                            "status": "正常",
+                            "slot_number": "0",
+                            "raid_level": "",
+                            "media_type": "HDD",
+                            "size": "299999170658",
+                            "remain": "",
+                            "storagepool_name": ""
+                        },
+                        {
+                            "object_ip_addr": "172.16.60.55",
+                            "object_name": "rac055",
+                            "dev_path": "",
+                            "ManufacturerId": "SEAGATE",
+                            "using": false,
+                            "status": "正常",
+                            "slot_number": "1",
+                            "raid_level": "",
+                            "media_type": "HDD",
+                            "size": "600126116593",
+                            "remain": "",
+                            "storagepool_name": ""
+                        },
+                        {
+                            "object_ip_addr": "172.16.60.55",
+                            "object_name": "rac055",
+                            "dev_path": "",
+                            "ManufacturerId": "SEAGATE",
+                            "using": false,
+                            "status": "正常",
+                            "slot_number": "3",
+                            "raid_level": "",
+                            "media_type": "HDD",
+                            "size": "1000203393957",
+                            "remain": "",
+                            "storagepool_name": ""
+                        },
+                        {
+                            "object_ip_addr": "172.16.60.55",
+                            "object_name": "rac055",
+                            "dev_path": "/dev/sdk",
+                            "ManufacturerId": "SEAGATE",
+                            "using": true,
+                            "status": "正常",
+                            "slot_number": "4",
+                            "raid_level": "RAID 0",
+                            "media_type": "HDD",
+                            "size": "1798801023041",
+                            "remain": "",
+                            "storagepool_name": "HDD"
+                        },
+                        {
+                            "object_ip_addr": "172.16.60.55",
+                            "object_name": "rac055",
+                            "dev_path": "/dev/sdg",
+                            "ManufacturerId": "TOSHIBA",
+                            "using": true,
+                            "status": "正常",
+                            "slot_number": "5",
+                            "raid_level": "RAID 0",
+                            "media_type": "HDD",
+                            "size": "6001134464401",
+                            "remain": "",
+                            "storagepool_name": ""
+                        },
+                        {
+                            "object_ip_addr": "172.16.60.55",
+                            "object_name": "rac055",
+                            "dev_path": "",
+                            "ManufacturerId": "ATA",
+                            "using": false,
+                            "status": "正常",
+                            "slot_number": "6",
+                            "raid_level": "",
+                            "media_type": "HDD",
+                            "size": "8001146115325",
+                            "remain": "",
+                            "storagepool_name": ""
+                        },
+                        {
+                            "object_ip_addr": "172.16.60.55",
+                            "object_name": "rac055",
+                            "dev_path": "/dev/nvme0n1",
+                            "ManufacturerId": "Unknown device",
+                            "using": false,
+                            "status": "正常",
+                            "slot_number": "0000:42:00.0",
+                            "raid_level": "",
+                            "media_type": "FLASH",
+                            "size": "3200631791616",
+                            "remain": "100",
+                            "storagepool_name": ""
+                        },
+                        {
+                            "object_ip_addr": "172.16.60.60",
+                            "object_name": "cell60",
+                            "dev_path": "/dev/sda",
+                            "ManufacturerId": "SEAGATE",
+                            "using": true,
+                            "status": "正常",
+                            "slot_number": "0",
+                            "raid_level": "RAID 1",
+                            "media_type": "HDD",
+                            "size": "1198467674275",
+                            "remain": "",
+                            "storagepool_name": ""
+                        },
+                        {
+                            "object_ip_addr": "172.16.60.60",
+                            "object_name": "cell60",
+                            "dev_path": "/dev/sda",
+                            "ManufacturerId": "SEAGATE",
+                            "using": true,
+                            "status": "正常",
+                            "slot_number": "1",
+                            "raid_level": "RAID 1",
+                            "media_type": "HDD",
+                            "size": "1198467674275",
+                            "remain": "",
+                            "storagepool_name": ""
+                        },
+                        {
+                            "object_ip_addr": "172.16.60.60",
+                            "object_name": "cell60",
+                            "dev_path": "/dev/sdb",
+                            "ManufacturerId": "ATA",
+                            "using": true,
+                            "status": "正常",
+                            "slot_number": "2",
+                            "raid_level": "RAID 0",
+                            "media_type": "SSD",
+                            "size": "1919747302096",
+                            "remain": "100",
+                            "storagepool_name": ""
+                        }
+                    ]
+                },
+                "network_card": {
+                    "ib_list": {
+                        "desc": "",
+                        "details": [
+                            {
+                                "host_ip": "172.16.60.55",
+                                "host_name": "rac055",
+                                "ca_name": "mlx4_0",
+                                "port": 1,
+                                "net_interface": "ib0",
+                                "ip_addrs": "3.2.2.55",
+                                "base_lid": "0x0",
+                                "rate": "10",
+                                "max_rate": "",
+                                "binding_srp": false,
+                                "binding_nvme": false,
+                                "active_state": "Down",
+                                "link_state": "Polling",
+                                "port_guid": "fe80:0000:0000:0000:f452:1403:007d:c871",
+                                "firmware": "2.35.5100",
+                                "ca_type": "MT4099",
+                                "sm_lid": "0x0",
+                                "link_layer": "InfiniBand"
+                            },
+                            {
+                                "host_ip": "172.16.60.55",
+                                "host_name": "rac055",
+                                "ca_name": "mlx4_0",
+                                "port": 2,
+                                "net_interface": "ib1",
+                                "ip_addrs": "13.13.13.55",
+                                "base_lid": "0x0",
+                                "rate": "10",
+                                "max_rate": "",
+                                "binding_srp": false,
+                                "binding_nvme": false,
+                                "active_state": "Down",
+                                "link_state": "Polling",
+                                "port_guid": "fe80:0000:0000:0000:f452:1403:007d:c872",
+                                "firmware": "2.35.5100",
+                                "ca_type": "MT4099",
+                                "sm_lid": "0x0",
+                                "link_layer": "InfiniBand"
+                            },
+                            {
+                                "host_ip": "172.16.60.55",
+                                "host_name": "rac055",
+                                "ca_name": "mlx4_1",
+                                "port": 1,
+                                "net_interface": "ib2",
+                                "ip_addrs": "2.2.2.55",
+                                "base_lid": "0x1c",
+                                "rate": "40",
+                                "max_rate": "56",
+                                "binding_srp": false,
+                                "binding_nvme": true,
+                                "active_state": "Active",
+                                "link_state": "LinkUp",
+                                "port_guid": "fe80:0000:0000:0000:f452:1403:007d:ca11",
+                                "firmware": "2.11.500",
+                                "ca_type": "MT4099",
+                                "sm_lid": "0x6",
+                                "link_layer": "InfiniBand"
+                            },
+                            {
+                                "host_ip": "172.16.60.55",
+                                "host_name": "rac055",
+                                "ca_name": "mlx4_1",
+                                "port": 2,
+                                "net_interface": "ib3",
+                                "ip_addrs": "11.11.11.55",
+                                "base_lid": "0x20",
+                                "rate": "56",
+                                "max_rate": "56",
+                                "binding_srp": false,
+                                "binding_nvme": true,
+                                "active_state": "Active",
+                                "link_state": "LinkUp",
+                                "port_guid": "fe80:0000:0000:0000:f452:1403:007d:ca12",
+                                "firmware": "2.11.500",
+                                "ca_type": "MT4099",
+                                "sm_lid": "0x6",
+                                "link_layer": "InfiniBand"
+                            },
+                            {
+                                "host_ip": "172.16.60.60",
+                                "host_name": "cell60",
+                                "ca_name": "mlx4_0",
+                                "port": 1,
+                                "net_interface": "ib0",
+                                "ip_addrs": "2.2.2.60",
+                                "base_lid": "0x2c",
+                                "rate": "56",
+                                "max_rate": "56",
+                                "binding_srp": false,
+                                "binding_nvme": false,
+                                "active_state": "Active",
+                                "link_state": "LinkUp",
+                                "port_guid": "fe80:0000:0000:0000:f452:1403:007d:8d71",
+                                "firmware": "2.35.5100",
+                                "ca_type": "MT4099",
+                                "sm_lid": "0x6",
+                                "link_layer": "InfiniBand"
+                            },
+                            {
+                                "host_ip": "172.16.60.60",
+                                "host_name": "cell60",
+                                "ca_name": "mlx4_0",
+                                "port": 2,
+                                "net_interface": "ib1",
+                                "ip_addrs": "11.11.11.60",
+                                "base_lid": "0x1f",
+                                "rate": "10",
+                                "max_rate": "",
+                                "binding_srp": false,
+                                "binding_nvme": false,
+                                "active_state": "Down",
+                                "link_state": "Disabled",
+                                "port_guid": "fe80:0000:0000:0000:f452:1403:007d:8d72",
+                                "firmware": "2.35.5100",
+                                "ca_type": "MT4099",
+                                "sm_lid": "0x6",
+                                "link_layer": "InfiniBand"
+                            }
+                        ]
+                    },
+                    "ipoib_list": {
+                        "desc": "",
+                        "details": [
+                            {
+                                "host_ip": "172.16.60.55",
+                                "host_name": "rac055",
+                                "name": "mlx4_0",
+                                "state": "Down",
+                                "port": 1,
+                                "dev_name": "ib0",
+                                "ip": "3.2.2.55",
+                                "mask": "255.255.255.0",
+                                "mtu": "2044",
+                                "driver_version": "4.9-3.1.5"
+                            },
+                            {
+                                "host_ip": "172.16.60.55",
+                                "host_name": "rac055",
+                                "name": "mlx4_0",
+                                "state": "Down",
+                                "port": 2,
+                                "dev_name": "ib1",
+                                "ip": "13.13.13.55",
+                                "mask": "255.255.255.0",
+                                "mtu": "2044",
+                                "driver_version": "4.9-3.1.5"
+                            },
+                            {
+                                "host_ip": "172.16.60.55",
+                                "host_name": "rac055",
+                                "name": "mlx4_1",
+                                "state": "Active",
+                                "port": 1,
+                                "dev_name": "ib2",
+                                "ip": "2.2.2.55",
+                                "mask": "255.255.255.0",
+                                "mtu": "2044",
+                                "driver_version": "4.9-3.1.5"
+                            },
+                            {
+                                "host_ip": "172.16.60.55",
+                                "host_name": "rac055",
+                                "name": "mlx4_1",
+                                "state": "Active",
+                                "port": 2,
+                                "dev_name": "ib3",
+                                "ip": "11.11.11.55",
+                                "mask": "255.255.255.0",
+                                "mtu": "2044",
+                                "driver_version": "4.9-3.1.5"
+                            },
+                            {
+                                "host_ip": "172.16.60.60",
+                                "host_name": "cell60",
+                                "name": "mlx4_0",
+                                "state": "Active",
+                                "port": 1,
+                                "dev_name": "ib0",
+                                "ip": "2.2.2.60",
+                                "mask": "255.255.255.0",
+                                "mtu": "4092",
+                                "driver_version": "4.9-3.1.5"
+                            },
+                            {
+                                "host_ip": "172.16.60.60",
+                                "host_name": "cell60",
+                                "name": "mlx4_0",
+                                "state": "Down",
+                                "port": 2,
+                                "dev_name": "ib1",
+                                "ip": "11.11.11.60",
+                                "mask": "255.255.255.0",
+                                "mtu": "4092",
+                                "driver_version": "4.9-3.1.5"
+                            }
+                        ]
+                    }
+                },
+                "partition_usage": {
+                    "desc": "",
+                    "partition_list": [
+                        {
+                            "node_name": "cell60",
+                            "mounted": "/",
+                            "size": "1096.78GB",
+                            "used": "19.20GB",
+                            "partition_usage": "2%",
+                            "inode_usage": "1%"
+                        },
+                        {
+                            "node_name": "cell60",
+                            "mounted": "/boot",
+                            "size": "3.99GB",
+                            "used": "0.20GB",
+                            "partition_usage": "5%",
+                            "inode_usage": "1%"
+                        },
+                        {
+                            "node_name": "rac055",
+                            "mounted": "/",
+                            "size": "999.51GB",
+                            "used": "64.73GB",
+                            "partition_usage": "7%",
+                            "inode_usage": "1%"
+                        },
+                        {
+                            "node_name": "rac055",
+                            "mounted": "/boot",
+                            "size": "3.99GB",
+                            "used": "0.14GB",
+                            "partition_usage": "4%",
+                            "inode_usage": "1%"
+                        },
+                        {
+                            "node_name": "rac055",
+                            "mounted": "/boot/efi",
+                            "size": "3.99GB",
+                            "used": "0.01GB",
+                            "partition_usage": "1%",
+                            "inode_usage": "0%"
+                        }
+                    ]
+                },
+                "raid_card": {
+                    "problem_level": "",
+                    "desc": "",
+                    "details": [
+                        {
+                            "raid_card_cache_size": "0MB",
+                            "raid_card_name": "PERC H310 Mini",
+                            "fw_pkg_build": "20.12.1-0002",
+                            "sn": "44A07E8",
+                            "host_name": "rac055",
+                            "bbu_model": "",
+                            "controller_status": "Optimal"
+                        },
+                        {
+                            "raid_card_cache_size": "2048MB",
+                            "raid_card_name": "AVAGO MegaRAID SAS 9361-8i 2GB",
+                            "fw_pkg_build": "24.21.0-0132",
+                            "sn": "SKA2571358",
+                            "host_name": "cell60",
+                            "bbu_model": "CVPM02",
+                            "controller_status": "Optimal"
+                        }
+                    ]
+                }
+            },
+            "ibswitch_overview": {
+                "desc": "没有在zData Manager中配置IB交换机，或IB交换机不可网管。",
+                "details": []
+            },
+            "storage_resources_overview": {
+                "storagepool_view": {
+                    "desc": "",
+                    "details": [
+                        {
+                            "storagepool_name": "HDD",
+                            "storagepool_type": "HDD",
+                            "is_voting": false,
+                            "storagepool_desc": "",
+                            "rest": 97.017,
+                            "total_size": 1799720146042,
+                            "free_size": 1746033054842,
+                            "disk_num": 1,
+                            "client_number": 1,
+                            "griddisk_num": 5,
+                            "server_num": 1
+                        }
+                    ]
+                },
+                "hostgroup_view": {
+                    "desc": "",
+                    "details": [
+                        {
+                            "group_name": "NVMEIB",
+                            "transpro": "NVME_IB",
+                            "node_name": "rac055",
+                            "ip_addr": "172.16.60.55"
+                        }
+                    ]
+                },
+                "volume_view": {
+                    "desc": "",
+                    "details": [
+                        {
+                            "storagepool_name": "HDD",
+                            "desc": "",
+                            "volumes": [
+                                {
+                                    "vol_name": "HDISK_RAC055_001",
+                                    "celldisk_name": "CDISK_RAC055_001",
+                                    "in_use": true,
+                                    "lv_state": "normal",
+                                    "size": 10,
+                                    "unit": "G",
+                                    "dev_path": "/dev/sdk",
+                                    "transpro": "NVME_IB",
+                                    "secgroup": "NVMEIB",
+                                    "create_time": "2022-04-24",
+                                    "obj_name": "rac055"
+                                },
+                                {
+                                    "vol_name": "HDISK_RAC055_002",
+                                    "celldisk_name": "CDISK_RAC055_001",
+                                    "in_use": true,
+                                    "lv_state": "normal",
+                                    "size": 10,
+                                    "unit": "G",
+                                    "dev_path": "/dev/sdk",
+                                    "transpro": "NVME_IB",
+                                    "secgroup": "NVMEIB",
+                                    "create_time": "2022-04-24",
+                                    "obj_name": "rac055"
+                                },
+                                {
+                                    "vol_name": "HDISK_RAC055_003",
+                                    "celldisk_name": "CDISK_RAC055_001",
+                                    "in_use": true,
+                                    "lv_state": "normal",
+                                    "size": 10,
+                                    "unit": "G",
+                                    "dev_path": "/dev/sdk",
+                                    "transpro": "NVME_IB",
+                                    "secgroup": "NVMEIB",
+                                    "create_time": "2022-04-24",
+                                    "obj_name": "rac055"
+                                },
+                                {
+                                    "vol_name": "HDISK_RAC055_004",
+                                    "celldisk_name": "CDISK_RAC055_001",
+                                    "in_use": true,
+                                    "lv_state": "normal",
+                                    "size": 10,
+                                    "unit": "G",
+                                    "dev_path": "/dev/sdk",
+                                    "transpro": "NVME_IB",
+                                    "secgroup": "NVMEIB",
+                                    "create_time": "2022-04-24",
+                                    "obj_name": "rac055"
+                                },
+                                {
+                                    "vol_name": "HDISK_RAC055_005",
+                                    "celldisk_name": "CDISK_RAC055_001",
+                                    "in_use": true,
+                                    "lv_state": "normal",
+                                    "size": 10,
+                                    "unit": "G",
+                                    "dev_path": "/dev/sdk",
+                                    "transpro": "NVME_IB",
+                                    "secgroup": "NVMEIB",
+                                    "create_time": "2022-04-24",
+                                    "obj_name": "rac055"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "db_report": {
+            "db_parameter_check": {
+                "desc": "没有在zData Manager中配置数据库实例。",
+                "details": []
+            },
+            "multipath_check": {
+                "multipath_service_status_check": {
+                    "problem_level": "normal",
+                    "desc": "多路径服务状态检查未发现异常。",
+                    "details": {
+                        "problem_level": "",
+                        "check_results": [],
+                        "details": []
+                    }
+                },
+                "multipath_link_status_check": {
+                    "problem_level": "normal",
+                    "desc": "",
+                    "multipath_link_status_checks": [
+                        {
+                            "problem_level": "normal",
+                            "check_results": [
+                                "未分配卷给此节点，忽略此检查项。。"
+                            ],
+                            "node_name": "rac055",
+                            "node_ip": "172.16.60.55",
+                            "details": []
+                        }
+                    ]
+                }
+            },
+            "asm_parameter_check": {
+                "desc": "",
+                "problem_level": "critical",
+                "details": [
+                    {
+                        "cluster_name": "testdb-cluster",
+                        "instance_name": "+ASM1",
+                        "node_name": "rac055",
+                        "node_ip": "172.16.60.55",
+                        "problem_level": "critical",
+                        "check_results": [
+                            "有3个参数不符合最佳实践，建议进行修复"
+                        ],
+                        "details": [
+                            {
+                                "check_item_name": "audit_sys_operations参数检查",
+                                "check_result": "TRUE",
+                                "reference": "FALSE",
+                                "check_status": "异常",
+                                "problem_level": "critical"
+                            },
+                            {
+                                "check_item_name": "large_pool_size参数检查",
+                                "check_result": "12M",
+                                "reference": "≥512M",
+                                "check_status": "异常",
+                                "problem_level": "critical"
+                            },
+                            {
+                                "check_item_name": "memory_target参数检查",
+                                "check_result": "1076M",
+                                "reference": "≥4096M",
+                                "check_status": "异常",
+                                "problem_level": "critical"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "kernel_parameter_check": {
+                "desc": "",
+                "problem_level": "critical",
+                "details": [
+                    {
+                        "node_name": "rac055",
+                        "node_ip": "172.16.60.55",
+                        "problem_level": "critical",
+                        "check_results": [
+                            "1个内核参数检查异常。"
+                        ],
+                        "details": [
+                            {
+                                "host_ip": "172.16.60.55",
+                                "node_name": "rac055",
+                                "check_item_name": "kernel.sem参数检查",
+                                "check_result": "10000 1280000 10000 1024",
+                                "reference": "≥10000 10240000 10000 1024",
+                                "check_status": "异常",
+                                "problem_level": "critical"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "memory_parameter_check": {
+                "desc": "",
+                "problem_level": "critical",
+                "details": [
+                    {
+                        "node_name": "rac055",
+                        "node_ip": "172.16.60.55",
+                        "problem_level": "critical",
+                        "check_results": [
+                            "数据库服务器内存使用检查存在2项检查异常。"
+                        ],
+                        "details": [
+                            {
+                                "check_item_name": "Swap空间使用检查",
+                                "check_result": "13M",
+                                "reference": "=0M",
+                                "check_status": "异常",
+                                "problem_level": "critical"
+                            },
+                            {
+                                "check_item_name": "大页使用检查",
+                                "check_result": "未使用",
+                                "reference": "使用",
+                                "check_status": "异常",
+                                "problem_level": "critical"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "cluster_check": {
+                "problem_level": "normal",
+                "desc": "集群检查未发现异常。",
+                "details": []
+            },
+            "asmgroup_check": {
+                "desc": "",
+                "problem_level": "critical",
+                "details": [
+                    {
+                        "problem_level": "critical",
+                        "cluster_name": "testdb-cluster",
+                        "object_name": "rac055",
+                        "ip_addr": "172.16.60.55",
+                        "check_results": [
+                            "1个ASM磁盘组rdbms兼容性参数检查异常。"
+                        ],
+                        "check_items": [
+                            {
+                                "node_name": "",
+                                "object_name": "DG_DATA01",
+                                "check_item_name": "磁盘组状态检查",
+                                "check_result": "MOUNTED",
+                                "reference": "MOUNTED",
+                                "check_status": "正常",
+                                "problem_level": "normal"
+                            },
+                            {
+                                "node_name": "",
+                                "object_name": "DG_DATA01",
+                                "check_item_name": "磁盘组使用率检查",
+                                "check_result": "3.86%",
+                                "reference": "<80%",
+                                "check_status": "正常",
+                                "problem_level": "normal"
+                            },
+                            {
+                                "node_name": "",
+                                "object_name": "DG_DATA01",
+                                "check_item_name": "磁盘组冗余模式检查",
+                                "check_result": "NORMAL",
+                                "reference": "NORMAL/HIGH",
+                                "check_status": "正常",
+                                "problem_level": "normal"
+                            },
+                            {
+                                "node_name": "",
+                                "object_name": "DG_DATA01",
+                                "check_item_name": "磁盘组asm兼容性参数检查",
+                                "check_result": "19.3.0.0.0",
+                                "reference": "≥11.2.0.0.0",
+                                "check_status": "正常",
+                                "problem_level": "normal"
+                            },
+                            {
+                                "node_name": "",
+                                "object_name": "DG_DATA01",
+                                "check_item_name": "磁盘组重构剩余耗时检查",
+                                "check_result": "--",
+                                "reference": "<6小时",
+                                "check_status": "正常",
+                                "problem_level": "normal"
+                            },
+                            {
+                                "node_name": "",
+                                "object_name": "DG_DATA01",
+                                "check_item_name": "磁盘组rdbms兼容性参数检查",
+                                "check_result": "11.2.0.4.0",
+                                "reference": "≥11.2.0.0.0",
+                                "check_status": "正常",
+                                "problem_level": "normal"
+                            },
+                            {
+                                "node_name": "",
+                                "object_name": "DG_DATA01",
+                                "check_item_name": "磁盘组冗余空间USABLE_FILE_MB检查",
+                                "check_result": "96476 MB",
+                                "reference": "> 0 MB",
+                                "check_status": "正常",
+                                "problem_level": "normal"
+                            },
+                            {
+                                "node_name": "",
+                                "object_name": "DG_DATA01",
+                                "check_item_name": "磁盘组冗余空间REQUIRED_MIRROR_FREE_MB检查",
+                                "check_result": "102400 MB",
+                                "reference": "> 0 MB",
+                                "check_status": "正常",
+                                "problem_level": "normal"
+                            },
+                            {
+                                "node_name": "",
+                                "object_name": "DG_GRID01",
+                                "check_item_name": "磁盘组状态检查",
+                                "check_result": "MOUNTED",
+                                "reference": "MOUNTED",
+                                "check_status": "正常",
+                                "problem_level": "normal"
+                            },
+                            {
+                                "node_name": "",
+                                "object_name": "DG_GRID01",
+                                "check_item_name": "磁盘组使用率检查",
+                                "check_result": "0.32%",
+                                "reference": "<80%",
+                                "check_status": "正常",
+                                "problem_level": "normal"
+                            },
+                            {
+                                "node_name": "",
+                                "object_name": "DG_GRID01",
+                                "check_item_name": "磁盘组冗余模式检查",
+                                "check_result": "NORMAL",
+                                "reference": "NORMAL/HIGH",
+                                "check_status": "正常",
+                                "problem_level": "normal"
+                            },
+                            {
+                                "node_name": "",
+                                "object_name": "DG_GRID01",
+                                "check_item_name": "磁盘组asm兼容性参数检查",
+                                "check_result": "19.0.0.0.0",
+                                "reference": "≥11.2.0.0.0",
+                                "check_status": "正常",
+                                "problem_level": "normal"
+                            },
+                            {
+                                "node_name": "",
+                                "object_name": "DG_GRID01",
+                                "check_item_name": "磁盘组重构剩余耗时检查",
+                                "check_result": "--",
+                                "reference": "<6小时",
+                                "check_status": "正常",
+                                "problem_level": "normal"
+                            },
+                            {
+                                "node_name": "",
+                                "object_name": "DG_GRID01",
+                                "check_item_name": "磁盘组rdbms兼容性参数检查",
+                                "check_result": "10.1.0.0.0",
+                                "reference": "≥11.2.0.0.0",
+                                "check_status": "异常",
+                                "problem_level": "critical"
+                            },
+                            {
+                                "node_name": "",
+                                "object_name": "DG_GRID01",
+                                "check_item_name": "磁盘组冗余空间USABLE_FILE_MB检查",
+                                "check_result": "101914 MB",
+                                "reference": "> 0 MB",
+                                "check_status": "正常",
+                                "problem_level": "normal"
+                            },
+                            {
+                                "node_name": "",
+                                "object_name": "DG_GRID01",
+                                "check_item_name": "磁盘组冗余空间REQUIRED_MIRROR_FREE_MB检查",
+                                "check_result": "102400 MB",
+                                "reference": "> 0 MB",
+                                "check_status": "正常",
+                                "problem_level": "normal"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "asm_disk_check": {
+                "problem_level": "critical",
+                "desc": "",
+                "details": [
+                    {
+                        "problem_level": "critical",
+                        "cluster_name": "testdb-cluster",
+                        "node_name": "rac055",
+                        "ip_addr": "172.16.60.55",
+                        "asm_diskgroup": "DG_GRID01",
+                        "check_results": [
+                            "3个ASM磁盘失效组与存储节点名称一致检查异常。"
+                        ],
+                        "online_err_cnt": 0,
+                        "fg_name_err_cnt": 3,
+                        "details": [
+                            {
+                                "asm_disk_name": "DG_GRID01_0000",
+                                "check_item_name": "ASM磁盘失效组与存储节点名称一致检查",
+                                "check_result": "不一致",
+                                "reference": "一致",
+                                "check_status": "异常",
+                                "problem_level": "critical"
+                            },
+                            {
+                                "asm_disk_name": "DG_GRID01_0001",
+                                "check_item_name": "ASM磁盘失效组与存储节点名称一致检查",
+                                "check_result": "不一致",
+                                "reference": "一致",
+                                "check_status": "异常",
+                                "problem_level": "critical"
+                            },
+                            {
+                                "asm_disk_name": "DG_GRID01_0002",
+                                "check_item_name": "ASM磁盘失效组与存储节点名称一致检查",
+                                "check_result": "不一致",
+                                "reference": "一致",
+                                "check_status": "异常",
+                                "problem_level": "critical"
+                            }
+                        ]
+                    },
+                    {
+                        "problem_level": "critical",
+                        "cluster_name": "testdb-cluster",
+                        "node_name": "rac055",
+                        "ip_addr": "172.16.60.55",
+                        "asm_diskgroup": "DG_DATA01",
+                        "check_results": [
+                            "3个ASM磁盘失效组与存储节点名称一致检查异常。"
+                        ],
+                        "online_err_cnt": 0,
+                        "fg_name_err_cnt": 3,
+                        "details": [
+                            {
+                                "asm_disk_name": "DG_DATA01_0000",
+                                "check_item_name": "ASM磁盘失效组与存储节点名称一致检查",
+                                "check_result": "不一致",
+                                "reference": "一致",
+                                "check_status": "异常",
+                                "problem_level": "critical"
+                            },
+                            {
+                                "asm_disk_name": "DG_DATA01_0001",
+                                "check_item_name": "ASM磁盘失效组与存储节点名称一致检查",
+                                "check_result": "不一致",
+                                "reference": "一致",
+                                "check_status": "异常",
+                                "problem_level": "critical"
+                            },
+                            {
+                                "asm_disk_name": "DG_DATA01_0002",
+                                "check_item_name": "ASM磁盘失效组与存储节点名称一致检查",
+                                "check_result": "不一致",
+                                "reference": "一致",
+                                "check_status": "异常",
+                                "problem_level": "critical"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "vote_disk_check": {
+                "problem_level": "normal",
+                "desc": "所有集群Votedisk检查正常。",
+                "details": []
+            }
+        },
+        "storage_resources_report": {
+            "volume_check": {
+                "desc": "所有存储池的逻辑卷状态正常。",
+                "details": []
+            }
+        },
+        "server_report": {
+            "partition_usage_check": {
+                "problem_level": "normal",
+                "desc": "未发现服务器分区使用率异常。",
+                "partition_usage_list": {
+                    "problem_level": "normal",
+                    "desc": [
+                        "未发现服务器分区使用率异常。"
+                    ],
+                    "details": []
+                }
+            },
+            "disk_check": {
+                "desc": "",
+                "problem_level": "",
+                "disk_check_list": [
+                    {
+                        "problem_level": "normal",
+                        "object_name": "rac055",
+                        "object_ip_addr": "172.16.60.55",
+                        "object_type": "storage_node",
+                        "check_results": [
+                            "检查发现所有磁盘正常。"
+                        ],
+                        "details": []
+                    },
+                    {
+                        "problem_level": "normal",
+                        "object_name": "cell60",
+                        "object_ip_addr": "172.16.60.60",
+                        "object_type": "quorum_node",
+                        "check_results": [
+                            "检查发现所有磁盘正常。"
+                        ],
+                        "details": []
+                    }
+                ]
+            },
+            "cpu_check": {
+                "desc": "",
+                "problem_level": "critical",
+                "cpu_check_list": {
+                    "problem_level": "critical",
+                    "check_results": [
+                        "1台服务器CPU处于降频模式。"
+                    ],
+                    "commands": [
+                        "# tund-adm profile latency-performance"
+                    ],
+                    "details": [
+                        {
+                            "ip_addr": "172.16.60.60",
+                            "node_name": "cell60",
+                            "check_item_name": "CPU 主频降频检查",
+                            "check_result": "1000 MHz",
+                            "reference": "2400 MHz",
+                            "check_status": "异常",
+                            "problem_level": "critical"
+                        }
+                    ]
+                }
+            },
+            "memory_check": {
+                "compute_memory_check": {
+                    "desc": "集群内的计算节点内存一致。",
+                    "problem_level": "normal",
+                    "memory_check_list": []
+                },
+                "storage_memory_check": {
+                    "desc": "没有在zData Manager中配置存储服务器，忽略该检查。",
+                    "problem_level": "normal",
+                    "memory_check_list": {
+                        "problem_level": "normal",
+                        "check_results": [
+                            "没有在zData Manager中配置存储服务器，忽略该检查。"
+                        ],
+                        "details": []
+                    }
+                }
+            },
+            "network_card_check": {
+                "ib_check_list": {
+                    "problem_level": "critical",
+                    "desc": "",
+                    "item": {
+                        "problem_level": "critical",
+                        "check_results": [
+                            "检查发现1个IB端口速率异常。"
+                        ],
+                        "details": [
+                            {
+                                "host_ip": "172.16.60.55",
+                                "node_name": "rac055",
+                                "check_item_name": "网卡mlx4_1端口1速率检查",
+                                "check_result": "40",
+                                "reference": "56",
+                                "check_status": "异常",
+                                "problem_level": "critical"
+                            }
+                        ]
+                    }
+                },
+                "ipoib_check_list": {
+                    "problem_level": "critical",
+                    "desc": "",
+                    "item": {
+                        "problem_level": "critical",
+                        "check_results": [
+                            "检查发现2个IB网卡端口MTU检查异常。"
+                        ],
+                        "details": [
+                            {
+                                "host_ip": "172.16.60.55",
+                                "node_name": "rac055",
+                                "check_item_name": "网卡端口ib2  MTU检查",
+                                "check_result": "2044",
+                                "reference": "65520",
+                                "check_status": "异常",
+                                "problem_level": "critical"
+                            },
+                            {
+                                "host_ip": "172.16.60.55",
+                                "node_name": "rac055",
+                                "check_item_name": "网卡端口ib3  MTU检查",
+                                "check_result": "2044",
+                                "reference": "65520",
+                                "check_status": "异常",
+                                "problem_level": "critical"
+                            }
+                        ]
+                    }
+                }
+            },
+            "raid_card_check": {
+                "problem_level": "critical",
+                "desc": "",
+                "details": {
+                    "problem_level": "critical",
+                    "check_results": [
+                        "检查发现1个节点RAID卡掉电保护模块状态检查异常。"
+                    ],
+                    "details": [
+                        {
+                            "host_ip": "172.16.60.55",
+                            "node_name": "rac055",
+                            "check_item_name": "RAID卡掉电保护模块检查",
+                            "check_result": "不存在",
+                            "reference": "存在",
+                            "check_status": "异常",
+                            "problem_level": "critical"
+                        }
+                    ]
+                }
+            },
+            "grub_params_check": {
+                "desc": "",
+                "problem_level": "critical",
+                "check_results": [
+                    "检查发现2台服务器grub参数检查异常。"
+                ],
+                "check_items": [
+                    {
+                        "node_name": "cell60",
+                        "host_ip": "172.16.60.60",
+                        "check_item_name": "参数crashkernel检查",
+                        "check_result": "auto",
+                        "reference": "≥512M",
+                        "check_status": "异常",
+                        "problem_level": "critical"
+                    },
+                    {
+                        "node_name": "rac055",
+                        "host_ip": "172.16.60.55",
+                        "check_item_name": "参数crashkernel检查",
+                        "check_result": "auto",
+                        "reference": "≥512M",
+                        "check_status": "异常",
+                        "problem_level": "critical"
+                    }
+                ]
+            },
+            "kdump_service_check": {
+                "problem_level": "normal",
+                "desc": "kdump服务检查未发现异常。",
+                "details": {
+                    "problem_level": "",
+                    "check_results": [],
+                    "details": []
+                }
+            },
+            "fan_check": {
+                "desc": "所有节点风扇检查未发现异常。",
+                "problem_level": "normal",
+                "check_results": [],
+                "check_items": []
+            },
+            "power_check": {
+                "problem_level": "critical",
+                "desc": "",
+                "details": {
+                    "problem_level": "critical",
+                    "check_results": [
+                        "检查发现2台服务器电源检查异常。"
+                    ],
+                    "details": [
+                        {
+                            "host_ip": "172.16.60.55",
+                            "node_name": "rac055",
+                            "check_item_name": "电源状态检查",
+                            "check_result": "10.2未使用",
+                            "reference": "在用",
+                            "check_status": "异常",
+                            "problem_level": "critical"
+                        },
+                        {
+                            "host_ip": "172.16.60.60",
+                            "node_name": "cell60",
+                            "check_item_name": "电源状态检查",
+                            "check_result": "10.2未使用",
+                            "reference": "在用",
+                            "check_status": "异常",
+                            "problem_level": "critical"
+                        }
+                    ]
+                }
+            }
+        },
+        "ibswitch_check": {
+            "desc": "没有在zData Manager中配置IB交换机，或IB交换机不可网管，忽略该检查。",
+            "detail": {
+                "has_ibswitch": false,
+                "check_results": [],
+                "problem_level": "",
+                "check_items": []
+            }
+        }
+    },
+    "trace": 1650873806344337000,
+    "detail": "",
+    "status": "ok"
+}
